@@ -52,7 +52,7 @@ class Minesweeper:
         return True
 
     def has_won(self):
-        """Check if all non-mine cells have been revealed."""
+        """Check if all non-mine cells are revealed."""
         for y in range(self.height):
             for x in range(self.width):
                 if (y * self.width + x) not in self.mines and not self.revealed[y][x]:
